@@ -1,3 +1,4 @@
+local plr = game:GetService('Players').LocalPlayer
 local Toggles = {
     Security = {
 	ModCheck = false,
