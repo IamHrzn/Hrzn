@@ -1,0 +1,1 @@
+getgenv().Kick = true
