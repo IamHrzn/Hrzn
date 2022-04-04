@@ -1,4 +1,4 @@
-_G.Kick = true
+_G.Kick = false
 
 if _G.kick == true then
     game:Shutdown()
