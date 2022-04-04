@@ -1,1 +1,1 @@
-getgenv().Kick = true
+_G.Kick = true
