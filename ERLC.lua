@@ -1,4 +1,4 @@
---// IAmHrzn, These codes cannot be used without permission. Dm hrzn#1234 for permission, or go to AeroX discord server.
+--// IAmHrzn\
 
 -- Infinite stamina
 
@@ -23,3 +23,5 @@ end)
 -- End Inf stamina
 
 -- Too lazy to add anything else, i'll add more later.
+
+-- + Will add autofarm here
