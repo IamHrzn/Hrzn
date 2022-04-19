@@ -44,7 +44,9 @@ Toggles.LocalPlayer.InfJump = false -- Sets infinite jump to false,
 
 Toggles.Security.ModCheck = false -- Sets Mod checking to false,
 
--- // For most ui librarys they have a toggle function; Value, State, X, Y, Whatever you name it. You can use that.
+-- // For most ui librarys they have a toggle function; function(...) you can use that.
 
 -- // Pretty basic scripts, might not work in all games. // -- 
 -- // hrzn#1234, github.com/IAmHrzn // -- Credit is appreciated.
+
+
