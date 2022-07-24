@@ -40,3 +40,5 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
+
+--- Nothing here was made by me, Zy made it, I just put it on my github since I thought it was nice.
