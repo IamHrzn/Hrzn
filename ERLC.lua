@@ -11,17 +11,11 @@ local Toggles = {
 Toggles.LocalPlayer.Stamina = false --// Set this to true if you want it to turn on
 
 spawn(function()
-    while true and wait() do
-      if Toggles.LocalPlayer.Stamina then
+    while Toggles.LocalPlayer.Stamina and wait() do
         local Plr = game:GetService('Players').LocalPlayer
-        Plr.PlayerGui.GameGui.BottomLeft.Health['Stamina LS'].Stamina.Value = 999 --// Set it to anything, I just set it to 999.
+        Plr.PlayerGui.GameGui.BottomLeft.Health['Stamina LS'].Stamina.Value = 999 --// Set it to anything, I just set it to 999 because juice wrld
       end
     end
 end)
 
 
--- End Inf stamina
-
--- Too lazy to add anything else, i'll add more later.
-
--- + Will add autofarm here
