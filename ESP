@@ -1,4 +1,16 @@
-local v2 = Vector2.new
+
+local Plr, plr, Client, LocalPlayer, Player = game:GetService('Players').LocalPlayer, game:GetService('Players').LocalPlayer, game:GetService('Players').LocalPlayer, game:GetService('Players').LocalPlayer, game:GetService('Players').LocalPlayer
+local UIS, UserInputService, UserInput = game:GetService('UserInputService'), game:GetService('UserInputService'), game:GetService('UserInputService')
+local RunService = game:GetService('RunService') 
+local Mouse, mouse = Plr:GetMouse(), plr:GetMouse()
+local TweenService = game:GetService('TweenService')
+local Players, plrs, players = game:GetService('Players'), game:GetService('Players'), game:GetService('Players')
+local Backpack, BackPack = Plr.Backpack, Plr.Backpack
+local PathfindingService, PathFind, AIPath = game:GetService("PathfindingService"), game:GetService("PathfindingService"), game:GetService("PathfindingService")
+local cam, Camera, camera = workspace.CurrentCamera,  workspace.CurrentCamera,  workspace.CurrentCamera
+
+do     
+    local v2 = Vector2.new
     local v3 = Vector3.new
     local c3 = Color3.fromRGB
     local Camera = workspace:FindFirstChild("Camera") and workspace.Camera or workspace.Character
@@ -612,4 +624,6 @@ local v2 = Vector2.new
     for _,v in pairs(Players:GetPlayers()) do
         esp:addtoplayer(v)
     end
-  return esp
+end
+
+return esp
