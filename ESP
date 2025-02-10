@@ -18,9 +18,9 @@ do
     esp = {
         enabled = false,
         teamcheck = false,
-        displayname = false,
-        localplayer = false,
-        limitdistance = false,
+        displayname = true,
+        localplayer = true,
+        limitdistance = true,
         distance = 500,
         arrowdistance = 50,
         arrowsize = 12,
@@ -29,17 +29,18 @@ do
         distancetype = "meters",
         textcase = "Normal",
         showtarget = {true, c3(255, 82, 82)},
-        outline = {true, c3(0, 0, 0)},
+        outline = {false, c3(0, 0, 0)},
         skeleton = {false, c3(255, 255, 255)},
         box = {false, c3(255, 255, 255)},
-        boxfill = {false, c3(255, 255, 255)},
-        highlights = {false, c3(0, 187, 255), c3(0, 157, 255), 1, 1, false--[[vis only]]},
+        boxfill = {true, c3(255, 255, 255)},
+        highlights = {true, c3(0, 187, 255), c3(0, 157, 255), 1, 1, true--[[vis only]]},
         oof = {false, c3(255, 255, 255), c3(200, 200, 200), 1, 0.5},
         text = {
-            name = {"top", false, c3(255, 255, 255)},
-            health = {"left", false, c3(255, 255, 255)},
-            distance = {"bottom", false, c3(255, 255, 255)},
-            tool = {"bottom", false, c3(255, 255, 255)},
+            name = {"top", true, c3(255, 255, 255)},
+            health = {"left", true, c3(255, 255, 255)},
+            distance = {"bottom", true, c3(255, 255, 255)},
+            tool = {"bottom", true, c3(255, 255, 255)},
+            team = {"bottom", true, c3(255, 255, 255)},
         },
         bars = {    
             healthbar = {"left", false, c3(255, 255, 0)},
@@ -309,7 +310,8 @@ do
             name = {esp.displayname and player.DisplayName or player.Name},
             health = {tostring(math.floor(data.health)).."hp"},
             distance = {math.floor(esp:getdistance(data.torso)) ..string.sub(esp.distancetype, 1, 1)},
-            tool = {esp:getweapon(player)}
+            tool = {esp:getweapon(player)},
+            team = {player:FindFirstChild("Is_Wanted") and "Criminal" or player.Team.Name}
         }, {
             healthbar = {data.health, 0, data.maxhealth, data.health / data.maxhealth}
         }
